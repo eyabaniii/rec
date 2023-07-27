@@ -1,0 +1,18 @@
+
+
+FUNCTION IS_PALINDROME(WORD:STRING; n,i:INTEGER;PALINDROME:BOOLEAN) : 
+VAR
+    set_declarations
+BEGIN
+   
+     IF (word[i]==WORD(n-1)) THEN
+            PALINDROME:=IS_PALINDROME(WORD,n-1,i+1)
+     ELSE_IF (n-1==i) THEN
+        PALINDROME:=TRUE
+        RETURN PALINDROME
+     ELSE
+ PALINDROME:=TRUE
+
+    END_IF
+
+END
